@@ -9,6 +9,10 @@ body{
     z-index: 999999;
 }
 
+a.navbar-brand{
+    color: white;
+}
+
 .navbar-brand{
     background-color: #0D28A6;
     color: white;
@@ -49,6 +53,10 @@ body{
 }
 
 .navbar-nav > li{
+    margin: 0px 10px;
+}
+
+.navbar-nav > a{
     margin: 0px 10px;
 }
 
