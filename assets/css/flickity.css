@@ -37,7 +37,7 @@ body{
     background-size: 100%;
     position: absolute;
     top: 120%;
-    left: 40%;
+    left: 35%;
 }
 
 .flickity-button.flickity-prev-next-button.next{
@@ -45,9 +45,13 @@ body{
   background-size: 100%;
   position: absolute;
   top: 120%;
-  right: 40%;
+  right: 35%;
 }
 
 .flickity-button-icon{
   opacity: 0%;
+}
+
+.flickity-slider{
+  width: 100%;
 }

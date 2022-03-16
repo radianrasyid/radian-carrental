@@ -1,5 +1,6 @@
 body{
     font-family: helvetica;
+    justify-content: center;
 }
 
 .navbar{
@@ -59,7 +60,7 @@ body{
 }
 
 .container-fluid.container-home-greet{
-    margin-right: 20px;
+    align-items: center;
 }
 
 .greet{
@@ -92,6 +93,7 @@ body{
   }
   .big-img{
     width: 100%;
+    right: 0;
     transform: scale(1.05);
     margin-top: 170px;
   }
@@ -101,7 +103,7 @@ body{
     top: 10%;
     width: 100%;
     max-width:100%;
-    transform: scale(1);
+    transform: scale(0.95);
   }
 
   .container.container-girl{
@@ -388,6 +390,30 @@ body{
 .col-10 h1{
     font-size: 14px;
     font-weight: 700;
+}
+
+@media (max-width: 992px) {
+    .navbar-collapse {
+        position: relative;
+        background-color: #F1F3FF;
+        top: 54px;
+        left: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        width: 100%;
+        transition: all 0.4s ease;
+        display: block;
+    }
+    .navbar-collapse.collapsing {
+        height: auto !important;
+        margin-left: 50%;
+        left: 50%;
+        transition: all 0.2s ease;
+    }
+    .navbar-collapse.show {
+        left: 0;
+    }
 }
 
   
