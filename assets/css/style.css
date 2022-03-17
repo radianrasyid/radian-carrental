@@ -392,27 +392,31 @@ body{
     font-weight: 700;
 }
 
-@media (max-width: 992px) {
-    .navbar-collapse {
-        position: relative;
-        background-color: #F1F3FF;
-        top: 54px;
-        left: 100%;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-bottom: 15px;
-        width: 100%;
-        transition: all 0.4s ease;
+/* navbar becomes mobile sidebar under lg breakpoint */
+ @media (max-width: 992px) {
+    
+    .navbar-collapse.collapsing .navbar-nav {
         display: block;
-    }
-    .navbar-collapse.collapsing {
-        height: auto !important;
-        margin-left: 50%;
-        left: 50%;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: -45%;
         transition: all 0.2s ease;
     }
-    .navbar-collapse.show {
-        left: 0;
+
+    .navbar-collapse.show .navbar-nav {
+        padding: 20px;
+        position: fixed;
+        top: 8%;
+        bottom: 0;
+        right: 0;
+        flex-direction: column;
+        height: auto;
+        width: 45%;
+        transition: right 0.2s ease;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        background-color: #F1F3FF;
+        z-index: 999999;
     }
 }
 
