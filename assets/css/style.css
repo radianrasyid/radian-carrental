@@ -453,5 +453,40 @@ body{
     }
 }
 
+@media only screen and (min-width: 990px){
+    .btn.btn-primary.sidebar{
+        opacity: 0;
+        position: absolute;
+    }
+    .sidebar-button{
+        background-color: #F1F3FF;
+    }
+
+}
+
+@media only screen and (max-width: 990px){
+    .btn.btn-primary.sidebar{
+        opacity: 1;
+        position: absolute;
+        right: 2%;
+        top: 3%;
+        z-index: 999999;
+    }
+
+    .offcanvas-header, .offcanvas-body{
+        background-color: #F1F3FF;
+    }
+        
+    .navbar-toggler{
+        z-index: -99999;
+        opacity: 0;
+    }
+
+    .sidebar-button{
+        position: relative;
+        left: 0;
+    }
+}
+
   
   
