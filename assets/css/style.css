@@ -420,5 +420,38 @@ body{
     }
 }
 
+@media only screen and (max-width: 600px){
+    .whyus, .whyus-desc{
+        text-align: center;
+    }
+
+    .card-body{
+        width: 70%;
+    }
+
+    .accordion.container{
+        align-items: center;
+        display: inline-block;
+        width: 100%;
+        column-width: 100%;
+    }
+
+    .carousel-cell{
+        margin-left: 15px;
+        margin-right: 100px;
+        width: 60%;
+    }
+
+    .col.col-accordion{
+        left: 5%;
+    }
+}
+
+@media only screen and (min-width: 600px){
+    .card-body{
+        width: 500px;
+    }
+}
+
   
   
