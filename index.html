@@ -13,6 +13,7 @@
     <script src="https://kit.fontawesome.com/23e061b762.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Home - Rad Car Rental</title>
     <link rel="icon" href="./assets/image/Mercedes Car EQC 300kW Edition - 900x598 1.svg">
@@ -21,10 +22,10 @@
 
     <!-- NAVBAR -->
     <img id="home" src="./assets/image/bg.svg" alt="" height="1" style="position: absolute; top: 0;">
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #F1F3FF">
+    <nav data-aos="fade-down" class="navbar navbar-expand-lg navbar-light" style="background-color: #F1F3FF">
       <a class="navbar-brand text-light" href="#home">Binar Car Rental</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <!-- <button class="navbar-toggler disabled" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"> -->
+        <!-- <span class="navbar-toggler-icon"></span> -->
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ms-auto">
@@ -57,7 +58,7 @@
     <!-- MAIN SECTION -->
     <section class="home">
       <div class="row" style="width: 100%;">
-        <div class="col-lg-6">
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-mirror="true" class="col-lg-6">
             <div class="container-fluid container-home-greet" style="padding-top: 100px;">
               <h1 class="greet">
                 Sewa & Rental Mobil Terbaik di kawasan Batam
@@ -68,7 +69,7 @@
               <a href="#sewa" class="button-sewa text-decoration-none">Mulai Sewa Mobil</a>
             </div>
         </div>
-        <div class="col-lg-6" style="width: fit-content;">
+        <div data-aos="zoom-in" data-aos-duration="1000" data-aos-mirror="true" class="col-lg-6" style="width: fit-content;">
               <img class=" big-img" src="./assets/image/bg.svg" alt="">
               <img class=" small-img" src="./assets/image/Mercedes Car EQC 300kW Edition - 900x598 1.svg" alt="">
           </div>
@@ -79,7 +80,7 @@
     <!-- OUR SERVICES -->
     <div class="container-fluid container-sect">
       <div id="our-service-greet" class="row">
-        <div class="col-lg-6">
+        <div data-aos="zoom-in" class="col-lg-6">
           <div class="col-lg-12 mt-5">
             <img src="./assets/image/Our Service/Ellipse 21 copy.svg" alt="" class="img-responsive big-img-girl">
             <img src="./assets/image/Our Service/Happy Girl - 961x1443 2.svg" alt="" class="img-responsive small-img-girl">
@@ -93,11 +94,11 @@
             <h1 class="our-service-greet" style="margin-bottom: 24px;">Best Car Rental for any kind of trip in Batam!</h1>
             <p class="our-service-desc" style="margin-bottom: 18px;">Sewa mobil di Batam bersama Rad Car Rental jaminan harga lebih murah dibandingkan yang lain, kondisi mobil baru, serta kualitas pelayanan terbaik untuk perjalanan wisata, bisnis, wedding, meeting, dll.</p>
             <ul>
-              <li><p><img src="./assets/image/Our Service/Group 53.svg" alt="" style="margin-right: 16px;">Sewa Mobil Dengan Supir di Batam 12 Jam</p></li>
-              <li><p><img src="./assets/image/Our Service/Group 53.svg" alt="" style="margin-right: 16px;">Sewa Mobil Lepas Kunci di Batam 24 Jam</p></li>
-              <li><p><img src="./assets/image/Our Service/Group 53.svg" alt="" style="margin-right: 16px;">Sewa Mobil Jangka Panjang Bulanan</p></li>
-              <li><p><img src="./assets/image/Our Service/Group 53.svg" alt="" style="margin-right: 16px;">Gratis Antar - Jemput Mobil di Bandara</p></li>
-              <li><p><img src="./assets/image/Our Service/Group 53.svg" alt="" style="margin-right: 16px;">Layanan Airport Transfer / Drop In Out</p></li>
+              <li data-aos="fade-up"><p><img src="./assets/image/Our Service/Group 53.svg" alt="" style="margin-right: 16px;">Sewa Mobil Dengan Supir di Batam 12 Jam</p></li>
+              <li data-aos="fade-up"><p><img src="./assets/image/Our Service/Group 53.svg" alt="" style="margin-right: 16px;">Sewa Mobil Lepas Kunci di Batam 24 Jam</p></li>
+              <li data-aos="fade-up"><p><img src="./assets/image/Our Service/Group 53.svg" alt="" style="margin-right: 16px;">Sewa Mobil Jangka Panjang Bulanan</p></li>
+              <li data-aos="fade-up"><p><img src="./assets/image/Our Service/Group 53.svg" alt="" style="margin-right: 16px;">Gratis Antar - Jemput Mobil di Bandara</p></li>
+              <li data-aos="fade-up"><p><img src="./assets/image/Our Service/Group 53.svg" alt="" style="margin-right: 16px;">Layanan Airport Transfer / Drop In Out</p></li>
             </ul>
           </div>
         </div>
@@ -113,7 +114,7 @@
       </div>
       <div class="container">
           <div class="row">
-            <div class="col-lg">
+            <div class="col-lg" data-aos="fade-right">
                     <div class="card" style="width: fit-content;">
                         <div class="card-body">
                           <img src="./assets/image/why us/icon_complete.svg" class="img-responsive mb-3" width="32" alt="">
@@ -122,7 +123,7 @@
                         </div>
                     </div>
             </div>
-            <div class="col-lg">
+            <div class="col-lg" data-aos="fade-right" data-aos-delay="50">
                 <div class="card" style="width: fit-content;">
                     <div class="card-body">
                         <img src="./assets/image/why us/icon_price.svg" class="img-responsive mb-3" width="32" alt="">
@@ -131,7 +132,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg">
+            <div class="col-lg" data-aos="fade-right" data-aos-delay="100">
                 <div class="card" style="width: fit-content;">
                     <div class="card-body">
                         <img src="./assets/image/why us/icon_24hrs.svg" class="img-responsive mb-3" width="32" alt="">
@@ -140,7 +141,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg">
+            <div class="col-lg" data-aos="fade-right" data-aos-delay="150">
                 <div class="card" style="width: fit-content;">
                     <div class="card-body">
                         <img src="./assets/image/why us/icon_professional.svg" class="img-responsive mb-3" width="32" alt="">
@@ -217,7 +218,7 @@
     <!-- SEWA MOBIL -->
     <div id="sewa" style="margin-top: 100px;"></div>
     <div style="margin-top: 200px;"></div>
-    <div class="container container-mulai-sewa text-center">
+    <div data-aos="flip-left" data-aos-duration="1000" class="container container-mulai-sewa text-center">
       <h1 class="sewa-main">Sewa Mobil di Batam Sekarang</h1>
       <div class="container">
         <p class="sewa-desc" style="margin-bottom: 52px;">
@@ -233,7 +234,7 @@
     <div id="faq" style="margin-bottom: 150px;"></div>
     <div class="container-fluid container-sect" style="margin-bottom: 100px;">
       <div class="row" style="width: 100%;">
-          <div class="col">
+          <div data-aos="fade-right" data-aos-duation="1000" class="col">
             <div class="container faq">
               <h2><strong>Frequently Asked Question</strong></h2>
               <p>Pertanyaan yang biasanya ditanyakan penyewa nih!</p>
@@ -241,7 +242,7 @@
           </div>
           <div class="col col-accordion" style="width: 100%;">
             <div class="accordion container" id="accordionPanelsStayOpenExample">
-              <div class="accordion-item" style="width: 100%;">
+              <div class="accordion-item" data-aos="fade-up" data-aos-delay="0" style="width: 100%;">
                 <h2 class="accordion-header" id="panelsStayOpen-headingOne">
                   <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                     <i class="fa-solid fa-circle-question mr-3"></i> Apa saja syarat yang dibutuhkan?
@@ -253,7 +254,7 @@
                   </div>
                 </div>
               </div>
-              <div id="freq" class="accordion-item" style="width: 100%;">
+              <div id="freq" class="accordion-item" data-aos="fade-up" data-aos-delay="50" style="width: 100%;">
                 <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                     <i class="fa-solid fa-circle-question mr-3"></i> Berapa hari minimal sewa mobil lepas kunci?
@@ -265,7 +266,7 @@
                   </div>
                 </div>
               </div>
-              <div class="accordion-item" style="width: 100%;">
+              <div class="accordion-item" data-aos="fade-up" data-aos-delay="100" style="width: 100%;">
                 <h2 class="accordion-header" id="panelsStayOpen-headingThree">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                     <i class="fa-solid fa-circle-question mr-3"></i> Berapa hari sebelumnya sabaiknya booking sewa mobil?
@@ -277,7 +278,7 @@
                   </div>
                 </div>
               </div>
-              <div class="accordion-item" style="width: 100%;">
+              <div class="accordion-item" data-aos="fade-up" data-aos-delay="150" style="width: 100%;">
                 <h2 class="accordion-header" id="panelsStayOpen-headingFour">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                     <i class="fa-solid fa-circle-question mr-3"></i> Apakah Ada biaya antar-jemput?
@@ -289,7 +290,7 @@
                   </div>
                 </div>
               </div>
-              <div class="accordion-item" style="width: 100%;">
+              <div class="accordion-item" data-aos="fade-up" data-aos-delay="200" style="width: 100%;">
                 <h2 class="accordion-header" id="panelsStayOpen-headingFive">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                     <i class="fa-solid fa-circle-question mr-3"></i> Bagaimana jika terjadi kecelakaan?
@@ -360,5 +361,9 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
