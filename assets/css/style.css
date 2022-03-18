@@ -392,34 +392,6 @@ body{
     font-weight: 700;
 }
 
-/* navbar becomes mobile sidebar under lg breakpoint */
- @media (max-width: 992px) {
-    
-    .navbar-collapse.collapsing .navbar-nav {
-        display: block;
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        right: -45%;
-        transition: all 0.2s ease;
-    }
-
-    .navbar-collapse.show .navbar-nav {
-        padding: 20px;
-        position: fixed;
-        top: 8%;
-        bottom: 0;
-        right: 0;
-        flex-direction: column;
-        height: auto;
-        width: 45%;
-        transition: right 0.2s ease;
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-        background-color: #F1F3FF;
-        z-index: 999999;
-    }
-}
-
 @media only screen and (max-width: 600px){
     .whyus, .whyus-desc{
         text-align: center;
@@ -467,14 +439,19 @@ body{
 @media only screen and (max-width: 990px){
     .btn.btn-primary.sidebar{
         opacity: 1;
-        position: absolute;
+        position: fixed;
         right: 2%;
-        top: 3%;
+        top: 1%;
         z-index: 999999;
     }
 
-    .offcanvas-header, .offcanvas-body{
+    .offcanvas{
+        width: 50%;
         background-color: #F1F3FF;
+    }
+
+    .offcanvas-header{
+        top: 10%;
     }
         
     .navbar-toggler{
@@ -482,9 +459,38 @@ body{
         opacity: 0;
     }
 
+    .nav-item{
+        top: 5%;
+        margin: 4px 0px;
+        color: black;
+        position: relative;
+        font-weight: 400;
+    }
+
+    .fade.show{
+        opacity: 0.7;
+    }
+
+    .btn-close{
+        position: relative;
+        top: 5%;
+        left: 7%;
+    }
+
+    .btn.btn-success.sidebar{
+        width: 100%;
+
+    }
+
     .sidebar-button{
         position: relative;
         left: 0;
+    }
+}
+
+@media only screen and (min-width:1200px){
+    .card-body{
+        width: 15rem;
     }
 }
 
