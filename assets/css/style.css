@@ -209,7 +209,6 @@ body{
 
   .card{
       display: flex;
-      outline: 2px solid #0077DC;
       flex-direction: column;
       align-items: flex-start;
       border-radius: 8px;
@@ -411,7 +410,28 @@ body{
     .carousel-cell{
         margin-left: 15px;
         margin-right: 100px;
-        width: 60%;
+        width: 85%;
+    }
+
+    .carousel-cell .col-lg-12{
+        text-align: center;
+        left: -10%;
+    }
+
+    .carousel-cell .row .col-10{
+        text-align: center;
+        left: -10%;
+    }
+
+    .carousel-cell .row .col-10 p,h1{
+        margin-top: 1rem;
+        text-align: left;
+    }
+
+    .carousel-cell .row .col-10 .d-flex{
+        justify-content: center;
+        position: relative;
+        left: -3%;
     }
 
     .col.col-accordion{
@@ -498,6 +518,13 @@ body{
         width: 15rem;
     }
 }
+
+@media only screen and (min-width:660px){
+    .col-lg-6.car .big-img{
+        width: 99.9%;
+    }
+}
+
 
   
   
